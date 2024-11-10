@@ -1,0 +1,103 @@
+@use './vender/ress.min.scss';
+html {
+  font-size: 0.625em;
+}
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  background: #ededed;
+  padding: 30px 0;
+}
+.p-todo {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.p-todo__list {
+  margin-bottom: 30px;
+  
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background: #ededed;
+    box-shadow:  5px 5px 8px #dcdcdc,-5px -5px 8px #fefefe;
+
+    .p-in-text {
+      font-size: 1.4rem;
+    }
+    .p-in-link {
+      display: flex;
+      gap: 0 10px;
+      width: 100px;
+
+      &-item {
+        width: 40px;
+        height: 40px;
+        border-radius: 50rem;
+        background: linear-gradient(145deg, #fefefe, #d5d5d5);
+        box-shadow:  5px 5px 8px #ebebeb,-5px -5px 8px #efefef;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(145deg, #d5d5d5, #fefefe);
+        }
+
+        &.--complete {
+
+        }
+        &.--remove {
+
+        }
+      }
+      svg {
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+}
+.p-todo__add {
+  width: 75%;
+  max-width: 500px;
+  margin: 0 auto;
+  &-input {
+    margin-bottom: 10px;
+    input {
+      display: block;
+      width: 100%;
+      height: 20px;
+      padding: 20px;
+      font-size: 1.5rem;
+      background: #ededed;
+      border-radius: 8px;
+      box-shadow: inset 3px 3px 5px #dcdcdc, -3px -3px 15px #fefefe;
+      appearance: none;
+    }
+  }
+  &-btn {
+    width: 100px;
+    margin: 0 auto;
+    button {
+      display: block;
+      width: 100%;
+      padding: 5px 0;
+      font-size: 1.8rem;
+      background: #ededed;
+      border-radius: 8px;
+      box-shadow: 5px 5px 8px #dcdcdc,-5px -5px 8px #fefefe;
+
+      &:active {
+        box-shadow: inset 3px 3px 5px #dcdcdc, -3px -3px 15px #fefefe;
+      }
+    }
+  }
+}

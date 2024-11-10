@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="ALL">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="ja_JP">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="">
+
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="mobile-web-app-capable" content="no">
+
+  <link rel="canonical" href="サイトURL">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.scss">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display: none;">
+    <defs>
+      <symbol id="icon-check" fill="none">
+        <g stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </symbol>
+      <symbol id="icon-remove" fill="none">
+        <g stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M5 7.5H19L18 21H6L5 7.5Z" stroke="#000000" stroke-linejoin="round"></path>
+          <path d="M15.5 9.5L15 19" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M12 9.5V19" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M8.5 9.5L9 19" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M16 5H19C20.1046 5 21 5.89543 21 7V7.5H3V7C3 5.89543 3.89543 5 5 5H8M16 5L15 3H9L8 5M16 5H8"
+            stroke="#000000" stroke-linejoin="round"></path>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+  <div id="app">
+    <div class="p-todo">
+      <ul class="p-todo__list" data-task>
+        <li class="p-todo__list-item">
+          <div class="p-in-text" data-task-name>
+            タスク名タスク名タスク名タスク名タスク名
+          </div>
+          <div class="p-in-link">
+            <div class="p-in-link-item --complete">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <use href="#icon-check">
+              </svg>
+            </div>
+            <div class="p-in-link-item --remove">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#icon-remove">
+              </svg>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="p-todo__add">
+        <div class="p-todo__add-input">
+          <input type="text" name="task_text">
+        </div>
+        <div class="p-todo__add-btn">
+          <button type="button">add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
