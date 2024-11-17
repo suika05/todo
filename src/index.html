@@ -65,35 +65,38 @@
   <div id="app">
     <div class="p-todo">
       <ul class="p-todo__list" data-task>
-        <li class="p-todo__list-item">
-          <div class="p-in-text" data-task-name>
-            タスク名タスク名タスク名タスク名タスク名
-          </div>
-          <div class="p-in-link">
-            <div class="p-in-link-item --complete">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-check">
-              </svg>
+        <template data-task-template>
+          <li class="p-todo__list-item">
+            <div class="p-in-text" data-task-name>
+              タスク名タスク名タスク名タスク名タスク名
             </div>
-            <div class="p-in-link-item --remove">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-remove">
-              </svg>
+            <div class="p-in-link">
+              <div class="p-in-link-item --complete" data-task-check>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#icon-check">
+                </svg>
+              </div>
+              <div class="p-in-link-item --remove" data-task-remove>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#icon-remove">
+                </svg>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
+        </template>
       </ul>
       <div class="p-todo__add">
-        <div class="p-todo__add-input">
+        <div class="p-todo__add-input" @input="inputText">
           <input type="text" name="task_text">
         </div>
-        <div class="p-todo__add-btn">
+        <div class="p-todo__add-btn" @click="template">
           <button type="button">add</button>
         </div>
       </div>
     </div>
   </div>
-  <script type="module" src="./assets/js/main.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
