@@ -8,17 +8,26 @@ const todo = {
 	},
 	set() {
 		this.state.app = Vue.createApp({
+			data() {
+				return {
+					inputText: null,
+					item: []
+				}
+			},
       methods: {
-				inputText(e) {
-					
+				add() {
+					this.item.push({
+						text: this.inputText,
+						complete: false,
+					});
+					this.inputText = null;
 				},
-        template(e) {
-					const _template = document.querySelector('template');
-					const _html = _template.content.cloneNode(true);
-					console.log(_html.querySelector('li'))
+				remove() {
 
-					document.querySelector('[data-task]').insertAdjacentHTML('beforeend',_html);
-        },
+				},
+				comoplete() {
+
+				}
       },
     });
     this.state.app.mount('#app');

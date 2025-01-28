@@ -26,6 +26,10 @@ body {
     background: #ededed;
     box-shadow:  5px 5px 8px #dcdcdc,-5px -5px 8px #fefefe;
 
+    & + & {
+      margin-top: 20px;
+    }
+
     .p-in-text {
       font-size: 1.4rem;
     }
@@ -66,11 +70,13 @@ body {
   }
 }
 .p-todo__add {
+  display: flex;
+  align-items: center;
   width: 75%;
   max-width: 500px;
   margin: 0 auto;
   &-input {
-    margin-bottom: 10px;
+    flex: 1;
     input {
       display: block;
       width: 100%;
@@ -85,7 +91,7 @@ body {
   }
   &-btn {
     width: 100px;
-    margin: 0 auto;
+    margin-left: 20px;
     button {
       display: block;
       width: 100%;
