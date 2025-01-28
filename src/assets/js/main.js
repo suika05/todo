@@ -25,7 +25,7 @@ const todo = {
 				remove() {
 
 				},
-				comoplete() {
+				complete() {
 
 				}
       },
